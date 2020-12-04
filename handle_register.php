@@ -9,7 +9,6 @@
   {
     header("Location: register.php?errCode=1");
     die ("傻瓜，你有東西忘記輸入了！");
-    $conn->error;
   }
   $nickname = $_POST["nickname"];
   $username = $_POST["username"];

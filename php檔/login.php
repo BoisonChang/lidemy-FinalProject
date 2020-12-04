@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <title>登入</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -30,20 +31,17 @@
 	  </div>
 	</nav>
 	<div class="container">
-		<form class="users">
+		<form method="POST" action="handle_login.php">
 			<div class="form-group">
-				<label for="exampleInputEmail1">Username</label>
-				<input type="text" class="form-control" id="Username" aria-describedby="Username">
+			<label for="exampleInputEmail1">Username</label>
+			<input type="text" class="form-control" id="Username" aria-describedby="Username">
 			</div>
 			<div class="form-group">
-				<label for="exampleInputPassword1">Password</label>
-				<input type="password" class="form-control" id="exampleInputPassword1">
+			<label for="exampleInputPassword1">Password</label>
+			<input type="password" class="form-control" id="exampleInputPassword1">
 			</div>
-			<div class="form-group">
-				<label for="exampleInputPassword1">再次輸入 Password</label>
-				<input type="password" class="form-control" id="exampleInputPassword1">
-				</div>
 			<button type="submit" class="btn btn-primary">提交</button>
+			<a class="btn btn-primary" href="register.php">註冊</a>
 		</form>
 	  </div>
 </body>

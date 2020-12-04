@@ -1,6 +1,5 @@
 <?php 
   require_once("conn.php");
-  require_once("utils.php");
   session_start();
   if (
   	empty($_POST["username"]) ||
@@ -35,26 +34,8 @@
     3. set-cookie: session-id
     */
     $_SESSION["username"] = $username;
-    header("Location: index.php");
-  } else {
-    header("Location: login.php?errCode=2");
-  }
-    /*產生 token 並儲存
-    $token = generateToken();
-    $username = $_SESSION["username"];
-    print_r($username);
-    /*$sql = sprintf(
-      "insert into tokens(token, username) values ('%s', '%s')",
-      $token,
-      $username
-    );
-    $result = $conn->query($sql);
-    if (!$result) {
-    die($conn->error);
-    }
-    //setcookie("token", $token, time() + 3600 );
     //header("Location: index.php");
-  } else {
+  } /*else {
     header("Location: login.php?errCode=2");
   }*/
 ?>
