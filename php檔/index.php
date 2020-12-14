@@ -1,6 +1,22 @@
+<?php
+  session_start();
+  require_once("conn.php");
+  require_once("utils.php");
+  $username = NULL;
+  $user = NULL;
+  if (!empty($_SESSION["username"])) {
+	  $username = $_SESSION["username"];
+	  $user = getUserFromSession($username);
+  }
+  
+  /*
+  $result = $conn->query("select * from Wozski_comments order by id desc");
+  if (!$result) {
+  	die ("Error:" . $conn->error);
+  }
+  */
+?>
 <!DOCTYPE html>
-
-
 <html>
 <head>
   <meta charset="utf-8">
@@ -16,7 +32,7 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
+ 
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -45,7 +61,12 @@
 	    </ul>
 	  </div>
 	  <div>
-	  	<a class="btn btn-info mr-2 clear-save-todo" href="login.php">登入</a>
+		<?php if (!empty($username)) {?>
+		  <div style="font-size:15px">您好！<?php echo $user['nickname'] ?></div>
+		  <a class="btn btn-info mr-2 clear-save-todo" href="handle_logout.php">登出</a>
+		<?php }else {?>
+		  <a class="btn btn-info mr-2 clear-save-todo" href="login.php">登入</a>
+		<?php }?>
 	  </div>
 	</nav>
 	<div class="container">

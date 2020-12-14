@@ -16,7 +16,7 @@
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	  <a class="navbar-brand" href="index.html">TripBook</a>
+	  <a class="navbar-brand" href="index.php">TripBook</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -32,18 +32,18 @@
 	<div class="container">
 		<form class="users" method="POST" action="handle_register.php">
 			<div class="form-group">
-				<label for="exampleInputUsername">Username</label>
-				<input type="text" class="form-control" id="Username" aria-describedby="Username">
+				<label>nickname</label>
+				<input type="text" class="form-control" name="nickname">
 			</div>
 			<div class="form-group">
-				<label for="exampleInputPassword1">Password</label>
-				<input type="password" class="form-control" id="exampleInputPassword1">
+				<label>username</label>
+				<input type="text" class="form-control" name="username">
 			</div>
 			<div class="form-group">
-				<label for="exampleInputPassword1">再次輸入 Password</label>
-				<input type="password" class="form-control" id="exampleInputPassword1">
-				</div>
-			<input type="submit" class="btn btn-primary"></input>
+				<label>password</label>
+				<input type="password" class="form-control" name="password">
+			</div>
+			<input type="submit" class="btn btn-primary" name="submit"></input>
 		</form>
 	  </div>
 </body>

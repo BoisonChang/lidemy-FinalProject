@@ -17,7 +17,7 @@
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	  <a class="navbar-brand" href="index.html">TripBook</a>
+	  <a class="navbar-brand" href="index.php">TripBook</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -34,11 +34,11 @@
 		<form method="POST" action="handle_login.php">
 			<div class="form-group">
 			<label for="exampleInputEmail1">Username</label>
-			<input type="text" class="form-control" id="Username" aria-describedby="Username">
+			<input type="text" class="form-control" name="username" aria-describedby="Username">
 			</div>
 			<div class="form-group">
 			<label for="exampleInputPassword1">Password</label>
-			<input type="password" class="form-control" id="exampleInputPassword1">
+			<input type="password" class="form-control" name="password">
 			</div>
 			<button type="submit" class="btn btn-primary">提交</button>
 			<a class="btn btn-primary" href="register.php">註冊</a>

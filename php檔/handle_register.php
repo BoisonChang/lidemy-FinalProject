@@ -3,13 +3,12 @@
   require_once("conn.php");
   if (
     empty($_POST["username"]) ||
-    empty($_POST["password"]) ||
-    empty($_POST["nickname"])
+    empty($_POST["password"]) 
     ) 
   {
-    header("Location: register.php?errCode=1");
-    die ("傻瓜，你有東西忘記輸入了！");
-    $conn->error;
+    //header("Location: register.php?errCode=1");
+    //die ("傻瓜，你有東西忘記輸入了！");
+    echo 123;
   }
   $nickname = $_POST["nickname"];
   $username = $_POST["username"];
@@ -21,10 +20,10 @@
   // 帳號重複
   if (!$result) {
     if($conn->errno === 1062) {
-      //header("Location: register.php?errCode=2");
+      header("Location: register.php?errCode=2");
     }
     die($conn->error);
   }
   $_SESSION['username'] = $username;
-  //header("Location: index.php");
+  header("Location: index.php");
 ?>

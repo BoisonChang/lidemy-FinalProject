@@ -34,8 +34,8 @@
     3. set-cookie: session-id
     */
     $_SESSION["username"] = $username;
-    //header("Location: index.php");
-  } /*else {
+    header("Location: index.php");
+  } else {
     header("Location: login.php?errCode=2");
-  }*/
+  }
 ?>
