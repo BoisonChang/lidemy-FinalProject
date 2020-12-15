@@ -7,18 +7,9 @@
    <title> TripBook 雲端共享圖書館</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
-<<<<<<< HEAD
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-
-
-  <title>TripBook 雲端共享圖書館</title>
-
-=======
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css"
 	
->>>>>>> 4bf4e7aa32ea68b116795f837cb091e2071f6476
 </head>
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -28,7 +19,8 @@
 
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar mb-5
+	 navbar-expand-lg navbar-light bg-light">
 	  <a class="navbar-brand" href="index.html">TripBook</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
@@ -54,9 +46,10 @@
 	    </ul>
 	  </div>
 	  <div>
-	  	<a class="btn btn-info mr-2 clear-save-todo" href="login.html">登入</a>
+	  	<a class="btn btn-info mr-2 clear-save-todo" href="login.php">登入</a>
 	  </div>
 	</nav>
+
 	<div class="container">
 		<div class="card-group">
 		  <div class="card">
@@ -146,7 +139,6 @@
     </li>
     <li class="page-item"><a class="page-link" href="#">2</a></li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
-    
     <li class="page-item">
       <a class="page-link" href="#">Next</a>
     </li>
@@ -160,10 +152,5 @@
   </div>
   <!-- Copyright -->
 </footer>
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 4bf4e7aa32ea68b116795f837cb091e2071f6476
+<script src="./index.js"></script>
 </html>

@@ -29,18 +29,23 @@
 	    </ul>
 	  </div>
 	</nav>
-	<form method="POST" action="handle_login.php">
-			<div class="login-username">
-			  帳號：
-			  <input type="text" name="username"> 
+	<div class="container">
+		<form class="users" method="POST" action="handle_register.php">
+			<div class="form-group">
+				<label for="exampleInputUsername">Username</label>
+				<input type="text" class="form-control" id="Username" aria-describedby="Username">
 			</div>
-			<div class="login-username">
-			  密碼：
-			  <input type="password" name="password"> 
+			<div class="form-group">
+				<label for="exampleInputPassword1">Password</label>
+				<input type="password" class="form-control" id="exampleInputPassword1">
 			</div>
-			 <input type="submit" name="submit" class="submit-btn"> 
-			<div class="board_hr"></div>
+			<div class="form-group">
+				<label for="exampleInputPassword1">再次輸入 Password</label>
+				<input type="password" class="form-control" id="exampleInputPassword1">
+				</div>
+			<input type="submit" class="btn btn-primary"></input>
 		</form>
+	  </div>
 </body>
 <footer class="page-footer font-small blue">
   <!-- Copyright -->
