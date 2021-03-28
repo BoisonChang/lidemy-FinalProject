@@ -1,40 +1,22 @@
 <template>
   <TopNav />
-
   <div class="container-wrapper">
-    <Posts />
+    <Posts  class="posts" />
   </div>
-
-  <nav aria-label="..." class="paginationv-top">
-    <ul class="pagination justify-content-center">
-      <li class="page-item disabled">
-        <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
-          >Previous</a
-        >
-      </li>
-      <li class="page-item active" aria-current="page">
-        <a class="page-link" href="#"
-          >1 <span class="sr-only">(current)</span></a
-        >
-      </li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-      <li class="page-item">
-        <a class="page-link" href="#">Next</a>
-      </li>
-    </ul>
-  </nav>
+  <BottomNav />
 </template>
 
 <script>
 import TopNav from "./components/TopNav.vue";
 import Posts from "./components/Posts.vue";
+import BottomNav from './components/BottomNav.vue';
 
 export default {
   name: "App",
   components: {
     TopNav,
     Posts,
+    BottomNav,
   },
 };
 </script>
@@ -138,8 +120,8 @@ export default {
 
 .post-review {
     margin-top: 17px;
-    white-space: pre-line;
     line-height: 1.5em;
+    white-space: pre-line;
 }
 
 .page__info {
