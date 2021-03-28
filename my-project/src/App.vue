@@ -269,15 +269,16 @@
       </li>
     </ul>
   </nav>
+  <TopNav />
 </template>
 
 <script>
-// import HelloWorld from "./components/HelloWorld.vue";
+import TopNav from "./components/TopNav.vue";
 
 export default {
   name: "App",
   components: {
-    // HelloWorld,
+    TopNav,
   },
 };
 </script>
