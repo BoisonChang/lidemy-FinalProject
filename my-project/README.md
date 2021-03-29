@@ -1,24 +1,5 @@
-# my-project
+# 閱讀心得上傳區
 
-## Project setup
-```
-npm install
-```
+## 功能說明：上傳閱讀心得區域之網頁切版
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 任務描述：使用 Vue 開發，實現最上方 TobBar 固定（Sticky 畫面效果），以及要實現網頁下滑時，左邊的（使用者）牌卡能夠在同一篇閱讀心得內固定住（Sticky 效果），直到滑到下一則貼文時，下一張牌卡能夠移動上來取代上一張牌卡，而若是接下來反向往上滑，則上一張原本的（使用者）牌卡則往下移動到原本位置，將下一張牌卡推開離開畫面。
